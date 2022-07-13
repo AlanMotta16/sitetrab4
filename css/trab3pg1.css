@@ -5,6 +5,9 @@
 .pg1{
     background-image:url(../imgs/pcbg.jpg);
 }
+.pg1 a{
+    text-decoration:none;
+}
 table{
     border:2px solid black;
     background-color:rgb(162, 161, 161);
@@ -17,9 +20,6 @@ caption{
     border-right:2px solid black;
     border-left:2px solid black;
     font-weight:900;
-}
-.dattable{
-    overflow-x:scroll;
 }
 td{
     font-size:20px;
@@ -75,6 +75,7 @@ tr:hover{
 }
 .dattable{
     grid-area:table;
+    overflow-x:scroll;
 }
 .cpudes{
     grid-area:cpu
@@ -115,16 +116,53 @@ tr:hover{
 @media (min-width:700px){
     .tabcont{
         display:grid;
-        column-gap:10px;
+        gap:10px;
         grid-template-columns:1fr 1fr;
         grid-template-areas:
         "pagetitle pagetitle"
         "pagedescr pagedescr"
         "cpu table"
         "gpu table"
-        "mth table"
-        "ram table"
-        "drv table"
-        "cas pow"
+        "mth mth"
+        "ram ram"
+        "drv drv"
+        "cas cas"
+        "pow pow"
     }
 }
+.compdes{
+    -webkit-animation-name: compdes;
+    animation-name: compdes;
+  }
+  .compdesan:hover{
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+    animation-direction:alternate;
+  }
+  @-webkit-keyframes compdes {
+    from {
+      opacity: 0.7;
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes compdes {
+    from {
+      opacity: 1;
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
