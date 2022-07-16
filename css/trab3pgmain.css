@@ -89,3 +89,58 @@
       opacity: 1;
     }
   }
+
+.bigbox{
+    background-color:lightblue;
+    animation-name:bigbox;
+    animation-duration:20s;
+    animation-iteration-count: infinite;  
+    animation-direction: alternate;
+    overflow:hidden;
+}
+.box1{
+    width:50px;
+    height:50px;
+    background-color: blue;
+    position: relative;
+    animation-name: box1;  
+    animation-duration: 20s;
+    animation-iteration-count: infinite;  
+    animation-direction: alternate; 
+    animation-timing-function:ease-in-out;
+}
+.box2{
+    width:50px;
+    height:50px;
+    background-color: blue;
+    position: relative;
+    transform:translate(150px, -50px);
+    animation-name: box2;  
+    animation-duration: 20s;
+    animation-iteration-count: infinite;  
+    animation-direction: alternate; 
+    animation-timing-function:ease-in-out;
+}
+.box3{
+    width:200px;
+    height:25px;
+    background-color:blue;
+    position:relative;
+    animation-name: box3;  
+    animation-duration: 20s;
+    animation-iteration-count: infinite;  
+    animation-direction: alternate; 
+    animation-timing-function:ease-in-out;
+}
+.box4{
+    width:25px;
+    height:25px;
+    background-color:blue;
+    position:relative;
+    transform:translate(50px, 0px);
+    animation-name: box4;  
+    animation-duration: 20s;
+    animation-iteration-count: infinite;  
+    animation-direction: alternate; 
+    animation-timing-function:ease-in-out;
+}

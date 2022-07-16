@@ -230,6 +230,12 @@ nav{
     transform: scale3d(1, 1, 1);
   }
 }
+@media (max-width:899px){
+  .nav-item{
+    display: flex;
+    align-items: center;
+  }
+}
 /*main*/
 main{
     font-family: 'Play', sans-serif;
